@@ -1,0 +1,18 @@
+<div class="toolbar" role="banner">
+  <span>Welcome</span>
+</div>
+
+<div class="content" role="main">
+  <div class="card highlight-card card-small">
+    <span>{{ title }} app is running!</span>
+    
+  </div>
+  <div>
+    <!--childData is an eventEmmiter object (@Output)-->
+    <testing (childData)="message=$event" [parentData]="nameText"></testing>
+
+    <p>{{ message }}</p>
+
+    <br><br><br>
+  </div>
+</div>
