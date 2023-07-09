@@ -25,20 +25,24 @@ classObejct = {
 
 public styleH1Element: boolean = true;
 public getColor:string = "orange";
- public styleObject = {
+public styleObject = {
   color: "lightgrey", 
   fontStyle: "italic"
  }
+
+
+ // dependency injection... with typescript shortcut
 constructor(private testService: TestserviceService){
 
 }
 
  ngOnInit(): void {
+  // subscribing this component to the data returned by the service!
   this.testService.getPeople().subscribe( (data) => this.people = data, (error) => this.errorVariable = error);
  }
 
 
-
+ // basic event handling...
  sayHello(){
   this.hello = "hello, there how are you?";  
  }
