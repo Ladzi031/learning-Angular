@@ -38,3 +38,11 @@
   </div>
 </div>
 
+
+<!--structural directive: *ngIf -->
+<div *ngIf="shouldGreetUser then greet else bye"></div>
+<!--template  reference variables-->
+<ng-template #greet >hello there!</ng-template>
+<ng-template #bye >Goodbye!</ng-template>
+
+

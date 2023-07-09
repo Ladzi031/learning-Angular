@@ -31,6 +31,7 @@ public styleObject = {
  }
 
 
+ shouldGreetUser = false;
  // dependency injection... with typescript shortcut
 constructor(private testService: TestserviceService){
 

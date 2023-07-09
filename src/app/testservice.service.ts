@@ -12,6 +12,7 @@ import { throwError } from 'rxjs';
 export class TestserviceService {
   public url = "/assets/strangePeople.json";
 
+  // DI with typeScript shortcut....
   constructor(private http: HttpClient) {}
 
   getPeople(): Observable<StrangePeople[]> {
