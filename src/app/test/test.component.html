@@ -12,6 +12,13 @@
 <button [class.testButton2]="buttonColor">test button 3</button>
 <button [ngClass]="classObejct">test button 4</button>
 
+
+<!--Style binding-->
+<h1 [style.color]="'yellow'">Angular is awesome 1</h1>
+<h1 [style.color]="styleH1Element ? 'blue': 'red'">Angular is awesome 2</h1>
+<h1 [style.color]="getColor">Angular is awesome 3</h1>
+<h1>Angular is awesome 4</h1>
+
 <!--event binding-->
 <button (click)="sayHello()">greet</button>
 <div>{{hello}}</div>

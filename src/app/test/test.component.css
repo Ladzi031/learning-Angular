@@ -6,11 +6,11 @@
 }
 .card {
   border-radius: 10px;
-  height: 50vh;
+  height: 250px;
   border: 3px solid lightblue;
   text-align: center;
 }
-h1 {
+div h1 {
   font-size: 0.5rem;
   font-family: verdana;
   color: lightslategrey;

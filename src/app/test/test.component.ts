@@ -23,6 +23,9 @@ classObejct = {
   testButton1: true
 }
 
+public styleH1Element: boolean = true;
+public getColor:string = "orange";
+
 constructor(private testService: TestserviceService){
 
 }
