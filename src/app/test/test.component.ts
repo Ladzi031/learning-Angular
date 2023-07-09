@@ -36,6 +36,7 @@ public styleObject = {
  public twoWaybinding = "";
 
  public testSwitch = "";
+ public testSwitch2 = "";
 
 
 
