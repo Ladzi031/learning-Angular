@@ -62,12 +62,16 @@
 </div>
 <input [(ngModel)]="testSwitch" type="text">
 
-
-
+<br><br><br>
+<h1>practice [ngSwitch] with *ngSwitchCase (hardcoded values!)</h1>
 <div [ngSwitch]="testSwitch2">
-  <h1>practice [ngSwitch] with *ngSwitchCase (hardcoded values!)</h1>
   <div *ngSwitchCase="'red'">You picked red color</div>
   <div *ngSwitchCase="'blue'">you picked blue color</div>
   <div *ngSwitchCase="'green'"> you picked green color</div>
   <div *ngSwitchDefault>you have not selected a color!</div>
 </div>
+
+
+<!--componet Interaction-->
+<h1>Component Interaction, basic @Input</h1>
+

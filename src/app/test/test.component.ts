@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { TestserviceService } from '../testservice.service';
 import { StrangePeople } from '../../interfaces/StrangePeople';
 
@@ -36,10 +36,10 @@ public styleObject = {
  public twoWaybinding = "";
 
  public testSwitch = "";
- public testSwitch2 = "";
+ public testSwitch2 = "red";
 
 
-
+ 
  // dependency injection... with typescript shortcut
 constructor(private testService: TestserviceService){
 
