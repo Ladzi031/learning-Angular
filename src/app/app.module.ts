@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
+import { FormsModule } from '@angular/forms';
 import { TestserviceService } from './testservice.service';
 import { HttpClientModule } from  '@angular/common/http';
+
 
 
 @NgModule({
@@ -15,6 +17,7 @@ import { HttpClientModule } from  '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [TestserviceService],

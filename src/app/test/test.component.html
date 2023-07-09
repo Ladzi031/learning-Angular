@@ -44,5 +44,9 @@
 <!--template  reference variables-->
 <ng-template #greet >hello there!</ng-template>
 <ng-template #bye >Goodbye!</ng-template>
+<br><br>
 
-
+<!--your view and component having, the exact same value in realtime-->
+<!--Two Way Binding-->
+<div>{{ twoWaybinding }}</div><br><br>
+<input [(ngModel)]="twoWaybinding" type="text" >

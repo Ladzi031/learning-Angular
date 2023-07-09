@@ -30,8 +30,13 @@ public styleObject = {
   fontStyle: "italic"
  }
 
-
  shouldGreetUser = false;
+
+
+ public twoWaybinding = "";
+
+
+
  // dependency injection... with typescript shortcut
 constructor(private testService: TestserviceService){
 
