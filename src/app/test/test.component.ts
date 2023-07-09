@@ -35,6 +35,8 @@ public styleObject = {
 
  public twoWaybinding = "";
 
+ public testSwitch = "";
+
 
 
  // dependency injection... with typescript shortcut

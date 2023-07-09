@@ -49,4 +49,15 @@
 <!--your view and component having, the exact same value in realtime-->
 <!--Two Way Binding-->
 <div>{{ twoWaybinding }}</div><br><br>
-<input [(ngModel)]="twoWaybinding" type="text" >
+<input [(ngModel)]="twoWaybinding" type="text" ><br><br><br>
+
+
+
+<h1>traffic light colours with <i>ngSwitch</i></h1>
+<div [ngSwitch]="testSwitch">
+  <div *ngSwitchCase="'red'">red means stop</div>
+  <div *ngSwitchCase="'green'">green means go</div>
+  <div *ngSwitchCase="'amber'" >orange? yellow? amber!!! means slow down and stop</div>
+  <div *ngSwitchDefault>test selected is unknown!</div>
+</div>
+<input [(ngModel)]="testSwitch" type="text">
