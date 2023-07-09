@@ -25,7 +25,10 @@ classObejct = {
 
 public styleH1Element: boolean = true;
 public getColor:string = "orange";
-
+ public styleObject = {
+  color: "lightgrey", 
+  fontStyle: "italic"
+ }
 constructor(private testService: TestserviceService){
 
 }
