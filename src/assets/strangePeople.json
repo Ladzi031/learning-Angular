@@ -1,0 +1,42 @@
+[
+    {
+    "name": "fabian",
+    "description": "a full stack developer with 10 000 thousand hours of practise!",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  },
+  {
+    "name": "John",
+    "description": "a JAVA GURU with 25 YEARS of JAVAring!!",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  }, 
+  {
+    "name": "farooq",
+    "description": "I know about everything under the sun!",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  },
+  {
+    "name": "gugu",
+    "description": "i write code without coffee, RAW power!!!!",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  },
+  {
+    "name": "joseph",
+    "description": "One day i will rule the world!!!",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  },
+  {
+    "name": "steve Jobs",
+    "description": "let me guess, you using an Iphone huh?",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  },
+  {
+    "name": "James Gosling",
+    "description": "Wassup? u gud, ask me anyThing JAVA...",
+    "hireDate": "Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  }, 
+  {
+    "name": "ladziiii the slacker",
+    "description": "coming from the dataabase bro",
+    "hireDate":"Fri Jul 07 2023 14:44:51 GMT+0200 (South Africa Standard Time)"
+  }
+]

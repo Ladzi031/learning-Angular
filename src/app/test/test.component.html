@@ -1,1 +1,33 @@
-<p>hello this is the testing component: {{ word }}</p>
+
+
+
+
+
+<!--property binding-->
+<input [disabled]="isDisabled" type="text">
+
+<!--class binding-->
+<button class="testButton1">test button 1</button>
+<button [class]="testTheButton">test button 2</button>
+<button [class.testButton2]="buttonColor">test button 3</button>
+<button [ngClass]="classObejct">test button 4</button>
+
+<!--event binding-->
+<button (click)="sayHello()">greet</button>
+<div>{{hello}}</div>
+
+<!-- interpolation, piping and the ngFor structual directive-->
+<div>{{ errorVariable }}</div>
+<div  id="container">
+  <div *ngFor="let person of people">
+    <div class="card">
+      <h1>{{ person.name | uppercase }}</h1>
+      <hr>
+      <br>
+      <p>{{ person.description }}</p>
+      <br>
+      <small>{{ person.hireDate | date:"short" }}</small>
+    </div>
+  </div>
+</div>
+
