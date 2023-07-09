@@ -38,8 +38,13 @@ public styleObject = {
  public testSwitch = "";
  public testSwitch2 = "red";
 
-
  
+// component interaction, get value from App-Component!
+@Input() public parentData: string = "";
+
+@Output() public childData = new EventEmitter();
+
+
  // dependency injection... with typescript shortcut
 constructor(private testService: TestserviceService){
 
@@ -54,6 +59,10 @@ constructor(private testService: TestserviceService){
  // basic event handling...
  sayHello(){
   this.hello = "hello, there how are you?";  
+ }
+
+ trigger() {
+  this.childData.emit("sending data from child to Parent component!");
  }
 
 }

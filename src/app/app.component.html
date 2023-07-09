@@ -8,6 +8,9 @@
     
   </div>
   <div>
-    <testing></testing>
+    <!--childData is an eventEmmiter object (@Output)-->
+    <testing (childData)="message=$event" [parentData]="nameText"></testing>
+
+    <p>{{ message }}</p>
   </div>
 </div>
