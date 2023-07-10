@@ -2,9 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DempartmentListComponent } from './dempartment-list/dempartment-list.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const routes: Routes = [
+  {path: '', redirectTo: '/departments', pathMatch: 'full'},
   { path: 'departments', component: DempartmentListComponent},
-  {path: 'employees', component: EmployeeListComponent}
+  {path: 'employees', component: EmployeeListComponent},
+  {path: "**", component: PageNotFoundComponent}
 ];
 // path specifies the path in the url (e.g localhost:4200/departments) and this should render the respective component
 
@@ -15,5 +18,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [DempartmentListComponent, EmployeeListComponent];
+export const routingComponents = [DempartmentListComponent, EmployeeListComponent, PageNotFoundComponent];
 // for cleaner code, for when importing in the app.module.ts file 
