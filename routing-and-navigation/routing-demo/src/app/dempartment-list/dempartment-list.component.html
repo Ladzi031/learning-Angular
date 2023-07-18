@@ -1,1 +1,7 @@
-<p>dempartment-list works!</p>
+<p>dempartment-list</p>
+<div>
+    <ul *ngFor="let department of departments">
+        <li>{{ department.id }} {{ department.name | titlecase }}</li>
+    </ul>
+</div>
+ 
