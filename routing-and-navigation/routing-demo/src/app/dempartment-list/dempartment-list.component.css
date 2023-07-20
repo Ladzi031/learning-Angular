@@ -1,0 +1,16 @@
+li {
+    padding: 1%;
+    margin: 2%;
+    width: 6%;
+    font-family: verdana;
+    background-color: grey;
+    font-size: large;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+span {
+    display: inline;
+    background-color: navy;
+    color: whitesmoke;
+}
