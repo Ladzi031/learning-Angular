@@ -1,0 +1,8 @@
+a {
+    color: grey;
+    font-size: large;
+    margin: 4%;
+    border-bottom: 3px solid lightblue;
+    padding: 1%;
+    cursor: pointer;
+}
