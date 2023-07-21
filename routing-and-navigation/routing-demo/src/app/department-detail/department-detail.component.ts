@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class DepartmentDetailComponent implements OnInit {
 
 
+  
   public departmentId: number = 0;
   constructor(private route: ActivatedRoute){
     // this service will provide the instance of the url directly
@@ -16,8 +17,8 @@ export class DepartmentDetailComponent implements OnInit {
 
   ngOnInit() {
     // get the current url and get the id param!
-    //let id = parseInt(this.route.snapshot.paramMap.get('id'));
-    //this.departmentId;
+    let id = this.route.snapshot.paramMap.get('id') as string;
+    this.departmentId = parseInt(id);
   }
 
 }

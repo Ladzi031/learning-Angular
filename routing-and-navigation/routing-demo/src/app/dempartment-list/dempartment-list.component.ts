@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
  interface Test {
-  id: number,
-  name: string
+  "id": number,
+  "name": string
  }
 @Component({
   selector: 'app-dempartment-list',
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./dempartment-list.component.css']
 })
 export class DempartmentListComponent {
-  public departments = [
+  public departments: Test[] = [
     {"id": 1, "name": "angular"},
     {"id": 2, "name": "mongoDB"},
     {"id": 3, "name": "python"},

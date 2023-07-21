@@ -10,7 +10,6 @@ li {
     cursor: pointer;
 }
 span {
-    display: inline;
     background-color: navy;
     color: whitesmoke;
 }
