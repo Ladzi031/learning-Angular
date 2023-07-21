@@ -17,11 +17,15 @@ export class DepartmentDetailComponent implements OnInit {
 
   ngOnInit() {
     // get the current url and get the id param!
+    
+    
+    
     /*
     let id = this.route.snapshot.paramMap.get('id') as string;
     this.departmentId = parseInt(id);
     */
 
+    //  snapshot vs. paramMap
 
     // this way is a little better, as the param gets updated, we also get the updated value! unlike the previous one
     this.route.paramMap.subscribe((param: ParamMap) => {
@@ -34,6 +38,15 @@ export class DepartmentDetailComponent implements OnInit {
   }
   onNext(){
     this.router.navigate(["/departments", this.departmentId + 1]);
+  }
+
+  gotoDepartments(){
+    let selectedId = this.departmentId;
+    this.router.navigate(["/departments", {id: selectedId}]);
+    
+    //note the Object being passed here!... this signifies an Optional route parameter!
+    // it route the the department component with the selectId as an optional... it does not affect the actual url route!
+    // we might want to use this selectId in the departments component, probably perform some logic with it
   }
 
 }
