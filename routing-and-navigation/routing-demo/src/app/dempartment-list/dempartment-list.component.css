@@ -13,3 +13,6 @@ span {
     background-color: navy;
     color: whitesmoke;
 }
+.selected {
+    border-bottom: 3px solid red;
+}
