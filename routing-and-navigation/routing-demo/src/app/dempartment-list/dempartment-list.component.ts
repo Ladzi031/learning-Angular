@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap} from '@angular/router';
 
  interface Test {
   "id": number,
@@ -10,7 +10,10 @@ import { Router } from '@angular/router';
   templateUrl: './dempartment-list.component.html',
   styleUrls: ['./dempartment-list.component.css']
 })
-export class DempartmentListComponent {
+export class DempartmentListComponent implements OnInit{
+
+public selectedId: number = 0;
+
   public departments: Test[] = [
     {"id": 1, "name": "angular"},
     {"id": 2, "name": "mongoDB"},
@@ -20,9 +23,13 @@ export class DempartmentListComponent {
   ]
 
 
-constructor(private router: Router){
+constructor(private router: Router, private route: ActivatedRoute){
 }
-
+ngOnInit(): void {
+  this.route.paramMap.subscribe((param: ParamMap) => {
+    this.selectedId = parseInt(param.get('id') as string);
+  })
+}
   // goal is to display the selected item in a different view component!
   public onSelect(department: Test) {
     // get the routing service first (import it)
@@ -30,4 +37,7 @@ constructor(private router: Router){
     this.router.navigate(['/departments', department["id"]]);
   }
 
+  isSelected(dempartment: Test){
+    return dempartment.id === this.selectedId;
+  }
 }
