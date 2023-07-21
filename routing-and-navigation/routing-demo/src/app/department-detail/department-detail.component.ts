@@ -9,7 +9,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 export class DepartmentDetailComponent implements OnInit {
   
   public departmentId: number = 0;
-
+  public selectedId = 0;
 
   constructor(private route: ActivatedRoute, private router: Router){
     // this service will provide the instance of the url directly
@@ -31,6 +31,7 @@ export class DepartmentDetailComponent implements OnInit {
     this.route.paramMap.subscribe((param: ParamMap) => {
       this.departmentId = parseInt(param.get('id') as string);
     })
+    this.selectedId = this.departmentId;
   }
 
   onPrevious(){
@@ -41,7 +42,7 @@ export class DepartmentDetailComponent implements OnInit {
   }
 
   gotoDepartments(){
-    let selectedId = this.departmentId;
+    
     // this.router.navigate(["/departments", {id: selectedId}]);
     
     //note the Object being passed here!... this signifies an Optional route parameter!
@@ -50,7 +51,18 @@ export class DepartmentDetailComponent implements OnInit {
 
 
     // Relative Navigation for much flexible routes with Optional route parameters!
-    this.router.navigate(['../', {id: selectedId}], {relativeTo: this.route});
+    this.router.navigate(['../', {id: this.selectedId}], {relativeTo: this.route});
+  }
+
+
+  // render the children routes/components relative to the current route!
+  // you can also add wild-card routes to handle errors in child routes
+
+  renderOverview(){
+    this.router.navigate(['overview'], {relativeTo: this.route});
+  }
+  renderContact(){
+    this.router.navigate(['contact'], {relativeTo: this.route});
   }
 
 }
