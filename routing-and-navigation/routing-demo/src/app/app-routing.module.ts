@@ -26,4 +26,4 @@ export const routingComponents = [
   PageNotFoundComponent,
   DepartmentDetailComponent
 ];
-// for cleaner code, for when importing in the app.module.ts file 
+// for cleaner code,  when importing in the app.module.ts file 

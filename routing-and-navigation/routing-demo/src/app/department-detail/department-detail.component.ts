@@ -42,11 +42,15 @@ export class DepartmentDetailComponent implements OnInit {
 
   gotoDepartments(){
     let selectedId = this.departmentId;
-    this.router.navigate(["/departments", {id: selectedId}]);
+    // this.router.navigate(["/departments", {id: selectedId}]);
     
     //note the Object being passed here!... this signifies an Optional route parameter!
     // it route the the department component with the selectId as an optional... it does not affect the actual url route!
     // we might want to use this selectId in the departments component, probably perform some logic with it
+
+
+    // Relative Navigation for much flexible routes with Optional route parameters!
+    this.router.navigate(['../', {id: selectedId}], {relativeTo: this.route});
   }
 
 }

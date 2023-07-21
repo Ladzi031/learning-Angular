@@ -34,10 +34,14 @@ ngOnInit(): void {
   public onSelect(department: Test) {
     // get the routing service first (import it)
     // provide navigate method with all the info it needs to construct the URL!
-    this.router.navigate(['/departments', department["id"]]);
+    //this.router.navigate(['/departments', department["id"]]);
+
+    // using relative navigation for much flexible routes
+    this.router.navigate([department.id], {relativeTo: this.route});
   }
 
   isSelected(dempartment: Test){
     return dempartment.id === this.selectedId;
+    // for the css effect!
   }
 }
