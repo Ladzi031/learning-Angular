@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: "**", component: PageNotFoundComponent}
 ];
 // path specifies the path in the url (e.g localhost:4200/departments) and this should render the respective component
-// the added children components are only available once we have accessed the department/:id path!  
+// the added children property, components are only available once we have accessed the department/:id path!  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
