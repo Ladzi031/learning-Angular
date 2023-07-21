@@ -1,9 +1,11 @@
 <p>department-detail works!</p>
- <p> you have selected the department with id = {{ departmentId }}</p>
+<p>you have selected the department with id = {{ departmentId }}</p>
 
- <a (click)="onPrevious()">Previous</a>
- <a (click)="onNext()">Next</a>
+<div>
+  <a (click)="onPrevious()">Previous</a>
+  <a (click)="onNext()">Next</a>
+</div>
 
- <div>
-    <button (click)="gotoDepartments()">Back</button>
- </div>
+<div>
+  <button (click)="gotoDepartments()">Back</button>
+</div>
